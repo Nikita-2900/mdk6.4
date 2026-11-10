@@ -14,6 +14,7 @@ function fff(inp, from, to) {
     const dm = 0.1
     const m = 1
     const km = 1000
+    const mm = 0.001
     let result = inp
     result = Number(result)
     if (from == "sm") {
@@ -27,6 +28,9 @@ function fff(inp, from, to) {
     }
     else if (from == "km") {
         result = result * km
+    }
+    else if (from == "mm") {
+        result = result * mm
     };
     if (to == "sm") {
         result = result / sm
@@ -39,6 +43,9 @@ function fff(inp, from, to) {
     }
     else if (to == "km") {
         result = result / km
+    }
+    else if (to == "mm") {
+        result = result / mm
     };
     return result;
 }
